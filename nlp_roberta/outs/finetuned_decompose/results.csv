@@ -1,0 +1,5 @@
+,_mask_rate,_mask_scale,_mask_strategy,_src_merge,cola,mnli,model,mrpc,qnli,qqp,rte,scaling,sst2,stsb
+0,,,,cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte,56.52,87.01,ft,87.99,91.71,89.71000000000001,66.43,,94.72,86.36
+0,,,,cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte,57.45,87.21,ft_linear_weight,87.33,91.71,89.61,66.43,,94.72,86.22
+0,,,,cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte,57.09,86.81,ft_linear_weight_decompose,87.33999999999999,91.21,89.34,65.34,,94.61,85.50999999999999
+0,,,,cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte,0.0,90.21000000000001,ft_decompose,74.8,91.81,87.0,52.71,,95.17999999999999,-7.88

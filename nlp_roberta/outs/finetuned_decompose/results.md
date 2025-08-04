@@ -1,0 +1,6 @@
+|    |   _mask_rate |   _mask_scale |   _mask_strategy | _src_merge                            |   cola |   mnli | model                      |   mrpc |   qnli |   qqp |   rte |   scaling |   sst2 |   stsb |
+|---:|-------------:|--------------:|-----------------:|:--------------------------------------|-------:|-------:|:---------------------------|-------:|-------:|------:|------:|----------:|-------:|-------:|
+|  0 |          nan |           nan |              nan | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |  56.52 |  87.01 | ft                         |  87.99 |  91.71 | 89.71 | 66.43 |       nan |  94.72 |  86.36 |
+|  0 |          nan |           nan |              nan | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |  57.45 |  87.21 | ft_linear_weight           |  87.33 |  91.71 | 89.61 | 66.43 |       nan |  94.72 |  86.22 |
+|  0 |          nan |           nan |              nan | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |  57.09 |  86.81 | ft_linear_weight_decompose |  87.34 |  91.21 | 89.34 | 65.34 |       nan |  94.61 |  85.51 |
+|  0 |              |               |                  | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |   0    |  90.21 | ft_decompose               |  74.8  |  91.81 | 87    | 52.71 |           |  95.18 |  -7.88 |

@@ -1,0 +1,8 @@
+|    |   _mask_rate |   _mask_scale | _mask_strategy   | _second_merge_method   | _src_merge                            |   cola |   mnli | model           |   mrpc |   qnli |   qqp |   rte |   scaling |   sst2 |   stsb |
+|---:|-------------:|--------------:|:-----------------|:-----------------------|:--------------------------------------|-------:|-------:|:----------------|-------:|-------:|------:|------:|----------:|-------:|-------:|
+|  0 |           70 |             1 | bernoulli        | ties_merge             | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |   6.68 |  72.13 | dare_merge      |  74.64 |  79.92 | 76.39 | 40.43 |    nan    |  89.91 |  -9.16 |
+|  0 |           80 |             1 | bernoulli        | ties_merge             | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |   0    |  64.94 | dare_merge      |  74.98 |  76.52 | 75.83 | 49.82 |    nan    |  89.68 | -12.41 |
+|  0 |           90 |             1 | bernoulli        | ties_merge             | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |  -2.12 |  59.54 | dare_merge      |  76.22 |  73.83 | 76.54 | 52.71 |    nan    |  87.73 | -11.15 |
+|  0 |           90 |           nan | nan              | nan                    | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |   9.46 |  59.34 | ties_merge      |  74.71 |  65.93 | 41.29 | 47.29 |      0.7  |  72.13 |   9.21 |
+|  0 |           70 |             1 | bernoulli        | task_arithmetic        | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |   0    |  56.74 | dare_merge      |  76.01 |  69.93 | 74.73 | 51.99 |    nan    |  86.35 |  16.12 |
+|  0 |          nan |           nan |                  | nan                    | cola+sst2+mrpc+stsb+qqp+mnli+qnli+rte |   6.68 |  65.83 | task_arithmetic |  78.43 |  78.42 | 73.23 | 53.43 |      0.29 |  83.94 |  27.86 |
