@@ -525,11 +525,11 @@ def run_awd_merge(
         datasets = ['cola', 'mnli', 'mrpc', 'qnli', 'qqp', 'rte', 'sst2', 'stsb']
         normalized_score = 0
         for dataset_name__ in datasets:
-            normalized_score += abs(metrics[dataset_name__] / individual[datasets.index(dataset_name__)])
-            print(f"{dataset_name__} = {abs(metrics[dataset_name__] / individual[datasets.index(dataset_name__)])}")
+            normalized_score += metrics[dataset_name__] / individual[datasets.index(dataset_name__)]
+            print(f"{dataset_name__} = {metrics[dataset_name__] / individual[datasets.index(dataset_name__)]}")
         normalized_score /= len(datasets)
         print("normalized_score = ", normalized_score)
-        print("average metrics = ", sum([abs(metrics[_name_metric]) for _name_metric in args.models_name])/len(args.models_name))
+        print("average metrics = ", sum([metrics[_name_metric] for _name_metric in args.models_name])/len(args.models_name))
         # utils.save_excel(metrics, args.outdir)
 
 def main(
