@@ -101,7 +101,7 @@ For the experiment of merging Qwen-14B LoRA fine-tuned models, you can refer the
 
 ---
 
-Experimental results of merging Qwen-14B (LoRA fine-tuned) models on all four tasks
+### Experimental results of merging Qwen-14B (LoRA fine-tuned) models on all four tasks
 
 | Method | MMLU | TruthfulQA | BBQ | CNN | Avg. |
 |---|---:|---:|---:|---:|---:|
