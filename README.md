@@ -20,4 +20,8 @@ If you find WUDI-Merging useful for your research and applications, please cite 
   year={2025}
 }
 ```
-## Acknowledgments
+## 🎫 License
+
+This project is released under the MIT License.
+
+## 💕 Acknowledgments
