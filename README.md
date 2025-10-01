@@ -25,3 +25,11 @@ If you find WUDI-Merging useful for your research and applications, please cite 
 This project is released under the MIT License.
 
 ## 💕 Acknowledgments
+
+Thanks to the following excellent open-source projects:\
+[Editing Models with Task Arithmetic](https://github.com/mlfoundations/task_vectors)\
+[Twin-Merging: Dynamic Integration of Modular Expertise in Model Merging](https://github.com/LZY-the-boys/Twin-Merging?tab=readme-ov-file)\
+[Language Models are Super Mario: Absorbing Abilities from Homologous Models as a Free Lunch](https://github.com/yule-BUAA/MergeLM)
+
+
+["Whoever Started the Interference Should End It: Guiding Data-Free Model Merging via Task Vectors"](https://arxiv.org/abs/2503.08099)
