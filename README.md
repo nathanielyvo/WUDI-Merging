@@ -15,6 +15,10 @@ For the experiment of Vit, you can use the code in [WUDI-Merging/vit](https://gi
 
 For the experiment of Roberta, you can use the code in [WUDI-Merging/nlp_roberta](https://github.com/nathanielyvo/WUDI-Merging/tree/main/nlp_roberta)
 
+For the experiment of merging WizardLM-13B, WizardMath-13B, Llama-2-13B-codealpaca — generative language tasks, you can refer the code in [WUDI-Merging/nlp_roberta](https://github.com/yule-BUAA/MergeLM)
+
+For the experiment of merging Qwen-14B LoRA fine-tuned models, you can refer the code in [Twin-Merging](https://github.com/LZY-the-boys/Twin-Merging?tab=readme-ov-file)
+
 
 ## 📖 Citation
 If you find WUDI-Merging useful for your research and applications, please cite using this BibTeX:
