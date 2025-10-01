@@ -9,9 +9,19 @@ The official repository of ["Whoever Started the Interference Should End It: Gui
 ## 💡 Introduction 
 
  In this work, we theoretically demonstrate that the task vectors of the linear layer constitute an approximate linear subspace for its corresponding input. Therefore, we can minimize interference under the guidance of task vectors. Based on this insight, we propose **WUDI-Merging** (**W**hoever started the interference sho**U**ld en**D** **I**t), a simple yet effective model merging method that eliminates interference without any additional data or rescaling coefficients. Comprehensive empirical evaluations across vision and language benchmarks demonstrate our method's superiority, achieving state-of-the-art performance in data-free model merging scenarios (average 10.9\% improvement versus baseline methods)  while even outperforming mainstream test-time adaptation approaches by 3.3\%, and only very few computing resources are required.
+
+## 📚 Reproduce
+For the experiment of Vit, you can use the code in [WUDI-Merging/vit](https://github.com/nathanielyvo/WUDI-Merging/tree/main/vit)
+
+For the experiment of Roberta, you can use the code in [WUDI-Merging/nlp_roberta](https://github.com/nathanielyvo/WUDI-Merging/tree/main/nlp_roberta)
+
+For the experiment of merging WizardLM-13B, WizardMath-13B, Llama-2-13B-codealpaca, you can refer the code in [WUDI-Merging/nlp_roberta](https://github.com/yule-BUAA/MergeLM)
+
+For the experiment of merging Qwen-14B LoRA fine-tuned models, you can refer the code in [Twin-Merging](https://github.com/LZY-the-boys/Twin-Merging?tab=readme-ov-file)
+
 ## 📊 Evaluation Results
 
-## Multi-task performance when merging ViT-B/32 models on 8-task vision benchmark
+### Multi-task performance when merging ViT-B/32 models on 8-task vision benchmark
 
 | Method | SUN397 | Cars | RESISC45 | EuroSAT | SVHN | GTSRB | MNIST | DTD | Avg Acc |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -36,7 +46,7 @@ The official repository of ["Whoever Started the Interference Should End It: Gui
 
 ---
 
-## Multi-task performance when merging ViT-L/14 models on 8-task vision benchmark
+### Multi-task performance when merging ViT-L/14 models on 8-task vision benchmark
 
 | Method | SUN397 | Cars | RESISC45 | EuroSAT | SVHN | GTSRB | MNIST | DTD | Avg Acc |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -60,7 +70,7 @@ The official repository of ["Whoever Started the Interference Should End It: Gui
 
 ---
 
-## Performance of merging decoder-based models (WizardLM-13B, WizardMath-13B, llama-2-13b-codealpaca)
+### Performance of merging decoder-based models (WizardLM-13B, WizardMath-13B, llama-2-13b-codealpaca)
 
 | Method | AlpacaEval | GSM8K | MATH | HumanEval | MBPP | Avg. |
 |---|---:|---:|---:|---:|---:|---:|
@@ -74,7 +84,7 @@ The official repository of ["Whoever Started the Interference Should End It: Gui
 
 ---
 
-## Multi-task performance when merging RoBERTa models on 8-task GLUE benchmark (average normalized score)
+### Multi-task performance when merging RoBERTa models on 8-task GLUE benchmark (average normalized score)
 
 | Method | RoBERTa-Base | RoBERTa-Large |
 |---|---:|---:|
@@ -101,14 +111,7 @@ Experimental results of merging Qwen-14B (LoRA fine-tuned) models on all four ta
 | **WUDI-Merging (Ours)** | **69.17** | **55.71** | **80.56** | **17.33** | **55.69** |
 
 
-## 📚 Reproduce
-For the experiment of Vit, you can use the code in [WUDI-Merging/vit](https://github.com/nathanielyvo/WUDI-Merging/tree/main/vit)
 
-For the experiment of Roberta, you can use the code in [WUDI-Merging/nlp_roberta](https://github.com/nathanielyvo/WUDI-Merging/tree/main/nlp_roberta)
-
-For the experiment of merging WizardLM-13B, WizardMath-13B, Llama-2-13B-codealpaca, you can refer the code in [WUDI-Merging/nlp_roberta](https://github.com/yule-BUAA/MergeLM)
-
-For the experiment of merging Qwen-14B LoRA fine-tuned models, you can refer the code in [Twin-Merging](https://github.com/LZY-the-boys/Twin-Merging?tab=readme-ov-file)
 
 
 ## 📖 Citation
